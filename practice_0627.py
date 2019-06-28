@@ -21,9 +21,9 @@ def main():
     print(dic.keys())
 
     #タプル
-    tuple = (1,2,3,4,5)
-    tuple = tuple + (100,200,300)
-    print(tuple)
+    tup = (1,2,3,4,5)
+    tup = tup + (100,200,300)
+    print(tup)
     # ※タプルは基本的にはリストと同じだが、要素は変更できない
 
 if __name__ == '__main__':
