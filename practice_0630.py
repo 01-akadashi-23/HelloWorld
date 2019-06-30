@@ -2,7 +2,7 @@ def main():
     print(add_tax("Goods 1000 2019/06/30"))
     print('文字列を入力してください（半角英数のみ）')
     input_line = input()
-    print(oftenUseMesods(input_line))
+    print(oftenUseMethods(input_line))
 
 def add_tax(astring):
     items = astring.split()
@@ -10,10 +10,9 @@ def add_tax(astring):
     items[1] = str(int(price))
     return " ".join(items)
 
-def oftenUseMesods(s):
+def oftenUseMethods(s):
     return s
     # NOTE: ここから先のメソッドは、ただのメモ書きです
-
     s.find('abc',[0],[len(s)]) #最初に見つかった位置を0から始まるインデックスとして返す。rfindで末尾（右）から検索する
     s.index('def',[0],[len(s)]) #find()と同じように動作する。見つからなかった場合ValueErrorを返す。rindex
     s.endwith('ghi',[0],[len(s)]) #検索した文字列で終わっていた場合、Trueを返す
