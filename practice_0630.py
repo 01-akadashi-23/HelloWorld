@@ -16,7 +16,7 @@ def oftenUseMethods(s):
     s.find('abc',[0],[len(s)]) #最初に見つかった位置を0から始まるインデックスとして返す。rfindで末尾（右）から検索する
     s.index('def',[0],[len(s)]) #find()と同じように動作する。見つからなかった場合ValueErrorを返す。rindexで末尾（右）から
     s.endwith('ghi',[0],[len(s)]) #検索した文字列で終わっていた場合、Trueを返す
-    s.startwith('jkl',[0],[len(s)]) #検索した文字列で始まっていた場合、Trueを返す
+    s.startswith('jkl',[0],[len(s)]) #検索した文字列で始まっていた場合、Trueを返す
     s.split(' ',[0]) #指定した文字列で区切り、そのリストを返す。分割数を指定できる。rsplitで末尾（右）から分割できる（要分割数指定）
     s.join(['abc','def','ghi']) #シーケンス内の要素（文字列）を s で連結し、そのコピーを返す
     s.strip('jkl') # s から指定した文字列を削除し、そのコピーを返す（指定がない場合は空白を削除）。lstripは先頭のみ、rstripは末尾のみ対象
